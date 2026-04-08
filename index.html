@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Nicolas Hurtado | Desarrollador Full-Stack</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos Lucide (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <main class="app-container">
+        
+        <!-- Header / Hero Section -->
+        <section id="hero">
+            <header>
+                <div class="profile-container">
+                    <div class="profile-img">
+                        <!-- Placeholder dinámico -->
+                        <svg viewBox="0 0 24 24" width="80" height="80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide-user" style="color:var(--gl-accent)">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Alexis Nicolas Hurtado</h1>
+                    <p>Desarrollador Junior / Buscando nuevos desafíos</p>
+                    <div class="contact-actions">
+                        <a href="mailto:tu-email@correo.com" class="btn btn-primary">
+                            <i data-lucide="mail"></i> Contactar
+                        </a>
+                        <a href="https://github.com/ANH-OkapyBeeee" target="_blank" class="btn btn-outline">
+                            <i data-lucide="github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Alexis. Me apasiona construir soluciones tecnológicas que mejoren la vida de las personas. Actualmente estoy expandiendo mis horizontes aprendiendo sobre Git, Docker y el despliegue de aplicaciones profesionales.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">HTML5 & CSS3</div>
+                <div class="skill-tag">JavaScript ES6+</div>
+                <div class="skill-tag">Git & GitHub</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">Firebase</div>
+                <div class="skill-tag">React (Learning)</div>
+                <div class="skill-tag">Node.js</div>
+                <div class="skill-tag">Linux / Windows CLI</div>
+            </div>
+        </section>
+
+        <!-- Experience/Projects Section -->
+        <section id="projects">
+            <h2>Proyectos Destacados</h2>
+            <div style="display: grid; gap: 1rem; margin-top: 1rem;">
+                <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--gl-border);">
+                    <h3 style="margin-bottom: 0.5rem; color: var(--gl-accent);">Web Invitación Quinceañera</h3>
+                    <p style="font-size: 0.9rem; color: var(--gl-text-muted);">
+                        Sitio interactivo con confirmación vía Firebase Firestore, tabla de clasificación de juegos y diseño responsive dinámico.
+                    </p>
+                </div>
+                <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--gl-border);">
+                    <h3 style="margin-bottom: 0.5rem; color: var(--gl-accent);">Sistema de Tickets (Prueba)</h3>
+                    <p style="font-size: 0.9rem; color: var(--gl-text-muted);">
+                        Demo funcional de gestión de tickets técnica integrado con base de datos NoSQL Firestore.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script para inicializar iconos -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

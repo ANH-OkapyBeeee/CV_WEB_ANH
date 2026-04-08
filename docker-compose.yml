@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  cv-web:
+    build: .
+    ports:
+      - "8080:80" # Mapea el puerto 80 del contenedor al puerto 8080 de tu PC
+    volumes:
+      - .:/usr/share/nginx/html # Hot-reload: los cambios se ven al instante en el navegador
+    container_name: alexis-cv-dev

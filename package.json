@@ -1,0 +1,15 @@
+{
+  "name": "cv-web-anh",
+  "version": "1.0.0",
+  "description": "Currículum Web Profesional de Alexis Nicolas Hurtado",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "Alexis Nicolas Hurtado",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
