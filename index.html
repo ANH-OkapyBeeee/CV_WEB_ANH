@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexis Nicolas Hurtado | Desarrollador Full-Stack</title>
+    <title>ANH Hub | Alexis Nicolas Hurtado</title>
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -14,7 +14,19 @@
 
     <main class="app-container">
         
-        <!-- Header / Hero Section -->
+        <!-- SELECTOR DE PERFILES (EL HUB) -->
+        <section id="career-hub" style="padding: 1.5rem; text-align: center;">
+            <p style="text-align: center; color: var(--gl-text-muted); font-size: 0.8rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">Selecciona un Enfoque Profesional</p>
+            <div class="hub-container">
+                <button class="hub-btn active" onclick="switchProfile('ia')">Inteligencia Artificial</button>
+                <button class="hub-btn" onclick="switchProfile('software')">Software Engineering</button>
+                <button class="hub-btn" onclick="switchProfile('seguridad')">Ciberseguridad / Forense</button>
+                <button class="hub-btn" onclick="switchProfile('negocios')">Finanzas / Inversión</button>
+                <button class="hub-btn" onclick="switchProfile('real')">Experiencia Real / Negocios</button>
+            </div>
+        </section>
+
+        <!-- Header / Hero Section (Dinamico) -->
         <section id="hero">
             <header>
                 <div class="profile-container">
@@ -28,64 +40,44 @@
                 </div>
                 <div class="profile-info">
                     <h1>Alexis Nicolas Hurtado</h1>
-                    <p>Desarrollador Junior / Buscando nuevos desafíos</p>
+                    <p>Especialista en Orquestación de IA</p>
                     <div class="contact-actions">
-                        <a href="mailto:tu-email@correo.com" class="btn btn-primary">
+                        <a href="mailto:alexmetal0429@gmail.com" class="btn btn-primary">
                             <i data-lucide="mail"></i> Contactar
                         </a>
                         <a href="https://github.com/ANH-OkapyBeeee" target="_blank" class="btn btn-outline">
-                            <i data-lucide="github"></i> GitHub
+                            <i data-lucide="github"></i> Mi portafolio
                         </a>
                     </div>
                 </div>
             </header>
         </section>
 
-        <!-- About Me Section -->
+        <!-- About Me Section (Dinamico) -->
         <section id="about">
             <h2>Sobre mí</h2>
-            <p>Hola, soy Alexis. Me apasiona construir soluciones tecnológicas que mejoren la vida de las personas. Actualmente estoy expandiendo mis horizontes aprendiendo sobre Git, Docker y el despliegue de aplicaciones profesionales.</p>
+            <p>Cargando información...</p>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills Section (Dinamico) -->
         <section id="skills">
             <h2>Habilidades Técnicas</h2>
             <div class="skills-grid">
-                <div class="skill-tag">HTML5 & CSS3</div>
-                <div class="skill-tag">JavaScript ES6+</div>
-                <div class="skill-tag">Git & GitHub</div>
-                <div class="skill-tag">Docker</div>
-                <div class="skill-tag">Firebase</div>
-                <div class="skill-tag">React (Learning)</div>
-                <div class="skill-tag">Node.js</div>
-                <div class="skill-tag">Linux / Windows CLI</div>
+                <!-- Se llena por JS -->
             </div>
         </section>
 
-        <!-- Experience/Projects Section -->
+        <!-- Experience/Projects Section (Dinamico) -->
         <section id="projects">
             <h2>Proyectos Destacados</h2>
-            <div style="display: grid; gap: 1rem; margin-top: 1rem;">
-                <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--gl-border);">
-                    <h3 style="margin-bottom: 0.5rem; color: var(--gl-accent);">Web Invitación Quinceañera</h3>
-                    <p style="font-size: 0.9rem; color: var(--gl-text-muted);">
-                        Sitio interactivo con confirmación vía Firebase Firestore, tabla de clasificación de juegos y diseño responsive dinámico.
-                    </p>
-                </div>
-                <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--gl-border);">
-                    <h3 style="margin-bottom: 0.5rem; color: var(--gl-accent);">Sistema de Tickets (Prueba)</h3>
-                    <p style="font-size: 0.9rem; color: var(--gl-text-muted);">
-                        Demo funcional de gestión de tickets técnica integrado con base de datos NoSQL Firestore.
-                    </p>
-                </div>
+            <div id="projects-container" style="display: grid; gap: 1rem; margin-top: 1rem;">
+                <!-- Se llena por JS -->
             </div>
         </section>
 
     </main>
 
-    <!-- Script para inicializar iconos -->
-    <script>
-        lucide.createIcons();
-    </script>
+    <!-- Script de lógica de perfiles -->
+    <script src="main.js"></script>
 </body>
 </html>
