@@ -9,7 +9,7 @@ const PROF_DATA = {
         color: "#38bdf8",
         image: "assets/images/perfil-2.jpg",
         about: "Experto en integración de modelos de lenguaje (LLMs) como GPT-4, Gemini y Claude. Especializado en orquestación de flujos de trabajo, Prompt Engineering y despliegue de modelos locales (Open-Source) para optimizar procesos empresariales.",
-        skills: ["ChatGPT/Gemini/Claude", "IA Local (Ollama/Llama)", "Orquestación de Datos", "Prompt Engineering", "Python", "Automatización IA"],
+        skills: ["ChatGPT/Gemini/Claude", "IA Local (Ollama/Llama)", "Internet de las Cosas (IoT)", "Prompt Engineering", "Python", "Automatización IA"],
         projects: [
             { name: "Agente de IA Local", desc: "Implementación de modelos open-source en servidores locales para privacidad total de datos." },
             { name: "Flujos Automatizados", desc: "Integración de IA en flujos de trabajo de oficina para reducir tiempos de respuesta." }
@@ -65,8 +65,8 @@ function switchProfile(profileKey) {
     if (!data) return;
 
     // 1. Actualizar Textos e Imagen
-    document.querySelector('.profile-info h1').innerText = "Alexis Nicolas Hurtado";
-    document.querySelector('.profile-info p').innerText = data.title;
+    document.querySelector('.profile-info h1').innerText = "Alexis Nicolás Hurtado";
+    document.querySelector('#role-title').innerText = data.title;
     document.querySelector('#about p').innerText = data.about;
     document.querySelector('.profile-img img').src = data.image;
     document.querySelector('#hero').style.borderColor = data.color;
@@ -106,12 +106,15 @@ function switchProfile(profileKey) {
  */
 function downloadATS(roleKey, format, pages) {
     const data = PROF_DATA[roleKey];
-    const name = "Alexis Nicolas Hurtado";
-    const contact = "Email: alexmetal0429@gmail.com | GitHub: github.com/ANH-OkapyBeeee";
+    const name = "Alexis Nicolás Hurtado";
+    const title = "Ingeniero en Sistemas Computacionales | Esp. en IoT";
+    const contact = `Email: nha_Job@outlook.com / alexmetal0429@gmail.com  
+Te: 720-422-3213 (WhatsApp/Llamadas) | 442-160-6931 (Solo WA) | 442-504-6771 (Solo Llamadas)`;
     
     // Estructura ATS (Solo Texto, Jerarquía Clara)
     let content = `
         <h1>${name.toUpperCase()}</h1>
+        <p><strong>${title.toUpperCase()}</strong></p>
         <p>${contact}</p>
         <hr>
         <h2>RESUMEN PROFESIONAL: ${data.title.toUpperCase()}</h2>
